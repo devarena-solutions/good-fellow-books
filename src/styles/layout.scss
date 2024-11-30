@@ -1,0 +1,81 @@
+@import "./variable.scss";
+
+$burnt-sienna: map_get($font-colors, "burnt-sienna");
+$cello: map_get($font-colors, "cello");
+
+.layout-container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .content-wrap {
+    padding-bottom: 0.1rem;
+    //margin-top: -30px;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.title {
+  color: $cello;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: serif;
+  font-variant: small-caps;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.first-capital-letter {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.tag-line {
+  color: $burnt-sienna;
+  font-variant: small-caps;
+  font-style: oblique;
+}
+
+.small-content {
+  font-size: 16px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #406775;
+  line-height: 1.2;
+}
+
+.large-content {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  word-spacing: 1px;
+  color: #406775;
+  line-height: 1.5;
+}
+
+.btn-grad {
+  height: 40px;
+  background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  //box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border-width: 0;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}

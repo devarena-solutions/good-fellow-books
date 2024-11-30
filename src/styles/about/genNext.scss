@@ -1,0 +1,121 @@
+@import "../variable.scss";
+
+$primary-color: map_get($base-colors, "primary-color");
+$dark-primary-color: map_get($base-colors, "dark-primary-color");
+$secondary-color: map_get($base-colors, "secondary-color");
+$black: map_get($font-colors, "black");
+$gurkha: map_get($base-colors, "gurkha");
+$burnt-sienna: map_get($font-colors, "burnt-sienna");
+$tom-thumb: map_get($base-colors, "tom-thumb");
+$tom-thumb-light: map_get($base-colors, "tom-thumb-light");
+$millbrok: map_get($base-colors, "millbrok");
+$mirage: map_get($base-colors, "mirage");
+$mantis: map_get($font-colors, "mantis");
+$white: map_get($font-colors, "white");
+$cello: map_get($font-colors, "cello");
+$shuttle_gray: map_get($font-colors, "shuttle_gray");
+
+.gen-next-container {
+    width: 98%;
+    margin: 0 auto;
+
+    .stars {
+        font-size: 35px;
+        color: #D49505;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .grid-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .grid-image {
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 80px;
+        }
+    }
+
+    .role-grid {
+        position: relative;
+
+        .role-container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            left: 0;
+            bottom: 5px;
+            background-color: $cello;
+            padding: 8px 0;
+            opacity: 0.8;
+
+            span {
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+    .gen-next {
+        width: 90%;
+        margin: 0 auto;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        button {
+            margin-top: 30px;
+            background-color: $mantis;
+            color: $white;
+        }
+
+        .grid-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .title {
+                color: $cello;
+                font-style: oblique;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+                font-family: serif;
+                font-variant: small-caps;
+            }
+        }
+    }
+
+    .gen-next {
+        img {
+            border-radius: 50%;
+            height: 175px;
+            width: 175px;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-left-width: 1px;
+            border-left-color: $shuttle_gray;
+            border-left-style: solid;
+            padding: 0 10px;
+
+            .small-content {
+                padding-left: 15px;
+            }
+        }
+    }
+}

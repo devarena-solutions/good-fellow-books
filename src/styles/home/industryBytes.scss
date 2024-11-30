@@ -1,0 +1,45 @@
+@import "../variable.scss";
+
+$primary-color: map_get($base-colors, "primary-color");
+$dark-primary-color: map_get($base-colors, "dark-primary-color");
+$secondary-color: map_get($base-colors, "secondary-color");
+$black: map_get($font-colors, "black");
+$gurkha: map_get($base-colors, "gurkha");
+$burnt-sienna: map_get($font-colors, "burnt-sienna");
+$tom-thumb: map_get($base-colors, "tom-thumb");
+$tom-thumb-light: map_get($base-colors, "tom-thumb-light");
+$millbrok: map_get($base-colors, "millbrok");
+$mirage: map_get($base-colors, "mirage");
+$mantis: map_get($font-colors, "mantis");
+$white: map_get($font-colors, "white");
+$cello: map_get($font-colors, "cello");
+$shuttle_gray: map_get($font-colors, "shuttle_gray");
+
+.industry-bytes-container {
+    width: 95%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .grid-item {
+        padding: 15px;
+
+        .text-container {
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            border: 5px solid #e2e2e2;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    }
+}

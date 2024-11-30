@@ -1,0 +1,131 @@
+@import "../variable.scss";
+
+$primary-color: map_get($base-colors, "primary-color");
+$dark-primary-color: map_get($base-colors, "dark-primary-color");
+$secondary-color: map_get($base-colors, "secondary-color");
+$light_gray: map_get($font-colors, "light-gray");
+$dark_gray: map_get($font-colors, "dark-gray");
+$white: map_get($font-colors, "white");
+$alto: map_get($font-colors, "alto");
+$black: map_get($font-colors, "black");
+$niagara: map_get($font-colors, "niagara");
+$yellow-orange: map_get($font-colors, "yellow-orange");
+$burnt-sienna: map_get($font-colors, "burnt-sienna");
+$dodger-blue: map_get($font-colors, "dodger-blue");
+$gurkha: map_get($base-colors, "gurkha");
+$gurkha-light: map_get($base-colors, "gurkha-light");
+$tom-thumb: map_get($base-colors, "tom-thumb");
+$tom-thumb-light: map_get($base-colors, "tom-thumb-light");
+$mirage: map_get($base-colors, "mirage");
+$mantis: map_get($font-colors, "mantis");
+$mirage: map_get($base-colors, "mirage");
+$lightning-yellow: map_get($font-colors, "lightning-yellow");
+$cello: map_get($font-colors, "cello");
+
+.why-choose-us {
+  width: 100%;
+
+  .why-choose-us-banner {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    background-color: $cello;
+    background-size: cover;
+
+    h3 {
+      font-size: 32px;
+      color: $yellow-orange;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 20px;
+      letter-spacing: 1px;
+      padding-top: 40px;
+      color: #fff;
+    }
+
+    .box-icon {
+      margin: 50px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+        text-align: center;
+
+        .data-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          width: 450px;
+          height: 600px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .icon-decorative {
+            border: 2px solid green;
+            position: relative;
+            transform: translate(0, 0);
+            box-shadow: 0 2px 14px 5px #030303;
+            border-radius: 5px;
+            border-radius: 10px;
+            width: 100%;
+            height: 300px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .text-container {
+            margin-top: 10px;
+            height: 200px;
+
+            h5 {
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              font-size: 20px;
+              margin: 0;
+              color: $white;
+              margin-top: 20px;
+              margin-bottom: 10px;
+              letter-spacing: 1.5px;
+              word-spacing: 3px;
+              line-height: 1.8;
+            }
+
+            h6 {
+              font-weight: 400;
+              letter-spacing: 1.2px;
+              line-height: 1.5;
+              font-size: 14px;
+              margin: 10px 0 0 0;
+            }
+
+            .small-content {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

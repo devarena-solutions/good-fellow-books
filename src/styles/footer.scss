@@ -1,0 +1,219 @@
+@import './variable.scss';
+
+$tom-thumb: map_get($base-colors, 'tom-thumb');
+$gurkha: map_get($base-colors, 'gurkha');
+$gurkha-light: map_get($base-colors, 'gurkha-light');
+$mirage: map_get($base-colors, 'mirage');
+$white: map_get($font-colors, 'white');
+
+.main-footer-area {
+  padding-top: 10px;
+  z-index: 1;
+  background-color: black;
+  position: relative;
+
+  .para {
+    text-align: left;
+    line-height: 1.7;
+  }
+
+  p {
+    color: white;
+    margin-bottom: 40px;
+  }
+  .navbar-brand {
+    color: white;
+  }
+
+  .footer-grid-container {
+    width: 95%;
+    margin: 0 auto;
+
+    .no-gutters {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .footer-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .widget-title {
+        text-decoration: underline;
+        font-size: 30px;
+        color: $gurkha-light;
+      }
+    }
+
+    .contact-info {
+      .navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .logo {
+          height: 90px;
+          width: 100%;
+          margin-right: 25%;
+        }
+      }
+
+      .para {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+      }
+
+      .social-info {
+        padding-top: 10px;
+
+        a {
+          text-decoration: none;
+        }
+
+        .social-media-icon {
+          font-size: 36px;
+          padding-right: 10px;
+        }
+
+        .fb-icon {
+          color: #3b5998;
+        }
+
+        .insta-icon {
+          color: #fd1d1d;
+        }
+
+        .youtube-icon {
+          font-size: 38px;
+          color: #c4302b;
+        }
+        .phone {
+          color: $gurkha-light;
+          font-size: 24px;
+          .phone-icon {
+            color: $gurkha-light;
+          }
+        }
+      }
+
+      .initials {
+        color: #1cc3b2;
+      }
+
+      h4 {
+        color: #1cc3b2;
+        font-size: 16px;
+      }
+
+      p {
+        color: gray;
+      }
+
+      span {
+        color: #afb4bf;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+        word-break: break-all;
+      }
+    }
+
+    .useful-links {
+      .widget-title {
+        text-decoration: underline;
+        font-size: 30px;
+        color: $gurkha-light;
+      }
+      #icon {
+        color: $gurkha-light;
+      }
+      h5 {
+        font-size: 18px;
+        color: $mirage;
+        margin-bottom: 25px;
+        display: block;
+        text-transform: capitalize;
+      }
+
+      ul {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          display: flex;
+
+          a {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            text-decoration: none;
+          }
+          a:hover {
+            color: $gurkha-light;
+          }
+        }
+      }
+    }
+
+    .about {
+      h5 {
+        font-size: 18px;
+        color: $white;
+        margin-bottom: 25px;
+        display: block;
+        text-transform: capitalize;
+      }
+
+      span {
+        color: $white;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+
+  .copywrite-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #273d4b;
+    width: 100%;
+
+    p {
+      font-size: 14px;
+      color: $white;
+      margin-bottom: 0;
+      line-height: 1.7;
+      padding-top: 5px;
+
+      .icon {
+        font-size: 18px;
+        color: $gurkha-light;
+      }
+
+      a {
+        color: $white;
+        font-size: 14px;
+        text-decoration: none;
+
+        &:hover {
+          color: $gurkha-light;
+          transition-duration: 500ms;
+        }
+      }
+    }
+  }
+}

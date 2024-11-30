@@ -1,0 +1,347 @@
+.contact-us {
+  width: 100%;
+  margin: 0 auto;
+
+  .container-img {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+
+    .contactImg {
+      width: 100%;
+      height: 657px;
+      object-fit: cover;
+    }
+    .us {
+      bottom: 0%;
+      left: 75%;
+      color: white;
+      font-size: 47px;
+      text-decoration: none;
+      position: absolute;
+      font-style: oblique;
+      font-variant: small-caps;
+    }
+  }
+
+  .contact-banner {
+    padding-top: 70px;
+    height: 400px;
+    padding-left: 40px;
+  }
+
+  .wrapper {
+    border-radius: 110px;
+    margin-left: 370px;
+  }
+  .wrapper .icon {
+    margin: 0 20px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon a {
+    display: block;
+    color: black;
+    margin: 40px;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 60%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.63);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon a .social {
+    line-height: 90px;
+    font-size: 40px;
+    padding-top: 8px;
+  }
+  .wrapper .icon .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(15, 15, 15, 0.836);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -38px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover a {
+    color: #fff;
+  }
+  .wrapper .icon:hover a,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  }
+  .wrapper .facebook:hover a,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip:before {
+    background: #3b5999;
+  }
+  .wrapper .instagram:hover a,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip:before {
+    background: #e1306c;
+  }
+  .wrapper .github:hover a,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip:before {
+    background: #333;
+  }
+  .wrapper .linkedin:hover a,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip:before {
+    background: #3b5999;
+  }
+  .wrapper .whatsapp:hover a,
+  .wrapper .whatsapp:hover .tooltip,
+  .wrapper .whatsapp:hover .tooltip:before {
+    background: green;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .blocks {
+      display: block;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      .photos {
+        .contact-item {
+          color: #879d7d;
+        }
+        .icons {
+          height: 50px;
+          width: 46px;
+          color: #879d7d;
+          // border: 1px solid #b19777;
+          margin: 0 auto;
+          margin-bottom: 0em;
+          margin-top: auto;
+          border-radius: 50%;
+          padding: 20px;
+        }
+        h3 {
+          font-size: 18px;
+          font-weight: 1000;
+          line-height: 1.5;
+          color: #879d7d;
+          margin-top: 0;
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          text-align: center;
+          font-family: sans-serif;
+        }
+        p,
+        h4,
+        a {
+          font-family: "Work Sans", Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 800;
+          line-height: 1.8;
+          color: rgba(70, 69, 69, 0.8);
+        }
+        a:link {
+          text-decoration: none;
+        }
+      }
+    }
+    .blocks:hover {
+      p {
+        color: #b19777;
+      }
+    }
+  }
+
+  .contact-form-container {
+    width: 80%;
+    margin: 0 auto;
+
+    .contact-form {
+      margin-top: 60px;
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        .MuiTextField-root {
+          padding-bottom: 10px;
+        }
+        Button {
+          background-color: #879d7d;
+          color: white;
+        }
+        Button:hover {
+          background-color: black;
+        }
+      }
+    }
+  }
+
+  iframe {
+    border: 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact-us {
+    .container-img {
+      height: auto;
+      .contactImg {
+        height: 250px;
+        width: 100%;
+      }
+      .us {
+        left: 20%;
+        right: 20%;
+        bottom: 35%;
+        font-size: 37px;
+      }
+    }
+    .contact-banner {
+      width: 210px;
+      padding-left: 5px;
+    }
+    .wrapper {
+      margin-left: 225px;
+    }
+    .container {
+      .blocks {
+        .photos {
+          .icons {
+            height: 55px;
+            width: 50px;
+          }
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-us {
+    .container-img {
+      height: auto;
+      .contactImg {
+        height: 250px;
+        width: 100%;
+      }
+      .us {
+        left: 30%;
+        right: 30%;
+        bottom: 35%;
+        font-size: 37px;
+      }
+    }
+    .contact-banner {
+      width: 340px;
+    }
+    .wrapper {
+      margin-left: 320px;
+    }
+    .container {
+      .blocks {
+        .photos {
+          .icons {
+            height: 60px;
+            width: 55px;
+          }
+          h3 {
+            font-size: 13px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-us {
+    .container-img {
+      height: auto;
+      .contactImg {
+        height: 250px;
+        width: 100%;
+      }
+      .us {
+        left: 40%;
+        right: 30%;
+        bottom: 35%;
+        font-size: 37px;
+      }
+    }
+    .contact-banner {
+      width: 520px;
+    }
+    .wrapper {
+      margin-left: 460px;
+    }
+    .container {
+      .blocks {
+        .photos {
+          .icons {
+            height: 65px;
+            width: 60px;
+          }
+          h3 {
+            font-size: 13px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

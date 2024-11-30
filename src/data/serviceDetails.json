@@ -1,0 +1,305 @@
+[
+  {
+    "id": "service-detail-1",
+    "service": "service-1",
+    "name": "Video Surveillance and Command Control Systems",
+    "image": "assets/images/services/corporate_solutions/detail-1.webp",
+    "description": {
+      "p1": "Video surveillance involves the act of observing a scene or scenes and looking for specific behaviors that are improper or that may indicate the emergence or existence of improper behavior.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-2",
+    "service": "service-1",
+    "name": "Fire Alarm Systems",
+    "image": "assets/images/services/corporate_solutions/detail-2.webp",
+    "description": {
+      "p1": "Whether you are upgrading your fire protection systems in your building or need to install new fire alarms, it is important to understand the different types of commercial fire alarms available. From the automatic alarm systems to the manual alarms, there are quite a few things you should know before blindly choosing a system. Let’s take a look at some fire alarm systems you could choose for your commercial space.",
+      "categories": {
+        "title": "Automatic versus Manual Fire Alarms",
+        "description": "There are two distinct types of fire alarms you can have in your commercial space.",
+        "details": [
+          {
+            "title": "Automatic Fire Alarms",
+            "description": "When these alarms detect heat or smoke, they send an audio-visual alert throughout the building to alert the occupants of danger."
+          },
+          {
+            "title": "Manual Fire Alarms",
+            "description": "These fire alarms have pull stations stationed around your building"
+          }
+        ]
+      },
+      "types": [
+        {
+          "title": "Conventional Fire Alarms",
+          "description": "Conventional fire alarms include a number of different “zones” that are hardwired to your central control panel. These systems allow you to be able to put separate fire alarms in each section of your building and helps to monitor if an alarm is broken."
+        },
+        {
+          "title": "Addressable Fire Alarms",
+          "description": "These fire alarms are also called “intelligent systems” as they monitor the fire alarms in your building. Addressable alarms allow you to choose between automatic and manual alarms. Each alarm installed in this system has its own address, which allows you to see which alarm is working and which are failing. Addressable fire alarms are more expensive because of the monitoring features."
+        },
+        {
+          "title": "Hybrid Fire Alarms",
+          "description": "Hybrid alarms combine the hardwired zone features of conventional fire alarms with the addressable loops of the addressable fire alarms into a single panel. This combined technology fits some of the settings better than either the addressable or the conventional alarm."
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-detail-3",
+    "service": "service-1",
+    "name": "Intrusion Detection Systems",
+    "image": "assets/images/services/corporate_solutions/detail-3.jpeg",
+    "description": {
+      "p1": "A perimeter intrusion detection system (PIDS) is a device or sensor that detects the presence of an intruder attempting to breach the physical perimeter of a property, building, or other secured area. A PIDS is typically deployed as part of an overall security system and is often found in high-security environments such as correctional facilities, airports,military bases, and nuclear plants.",
+      "categories": {
+        "title": "",
+        "description": "Typical sensors include",
+        "details": [
+          { "description": "Active IR" },
+          {"description": "Break wire" },
+          {"description": "Electrostatic field" },
+          {"description": "Fence detection" },
+          {"description": "Ground motion" },
+          {"description": "Magnetic" },
+          {"description": "Microwave detectors" },
+          {"description": "Near-IR beam break" },
+          {"description": "Passive IR" },
+          {"description": "Ported coaxial cable" },
+          {"description": "Taut wire" },
+          {"description": "Seismic" }
+        ]
+      }
+    }
+  },
+  {
+    "id": "service-detail-4",
+    "service": "service-1",
+    "name": "Access Control Systems",
+    "image": "assets/images/services/corporate_solutions/detail-4.jpeg",
+    "description": {
+      "p1": "",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-5",
+    "service": "service-1",
+    "name": "Parking management Solutions",
+    "image": "assets/images/services/corporate_solutions/detail-5.jpeg",
+    "description": {
+      "p1": "Entrance Automation System enables automatic operation/ opening & closing of any entrance mechanism like Boom Barriers, sliding gate/door' Swing gate' Barrier' Rolling Shutters' Road Blocks etc. ... In a fully automatic system' microwave sensors detect the motion of vehicles' human and initiate automatic opening of the entrance.A parking management system automates a car parking system.",
+      "p2": "It optimizes parking space and make processes efficient. It gives real-time car parking information such as vehicle & slot counts, available slots display, reserved parking, pay-and-park options, easy payments, reports, and a host of other features."
+    }
+  },
+  {
+    "id": "service-detail-6",
+    "service": "service-1",
+    "name": "Office Automation",
+    "image": "assets/images/services/corporate_solutions/detail-6.gif",
+    "description": {
+      "p1": "Office automation refers to the varied computer machinery and software used to digitally create, collect, store, manipulate, and relay office information needed for accomplishing basic tasks. Raw data storage, electronic transfer, and the management of electronic business information comprise the basic activities of an office automation system.[1] Office automation helps in optimizing or automating existing office procedures.",
+      "p2": "The backbone of office automation is a LAN, which allows users to transfer data, mail and even voice across the network. All office functions, including dictation, typing, filing, copying, fax, Telex, microfilm and records management, telephone and telephone switchboard operations, fall into this category."
+    }
+  },
+  {
+    "id": "service-detail-7",
+    "service": "service-1",
+    "name": "Networking solutions",
+    "image": "assets/images/services/corporate_solutions/detail-7.jpeg",
+    "description": {
+      "p1": "Computer networks connect nodes like computers, routers, and switches using cables, fiber optics, or wireless signals. These connections allow devices in a network to communicate and share information and resources. Networks follow protocols, which define how communications are sent and received. These protocols allow devices to communicate. Each device on a network uses an Internet Protocol or IP address, a string of numbers that uniquely identifies a device and allows other devices to recognize it.Routers are virtual or physical devices that facilitate communications between different networks.",
+      "p2": "Routers analyze information to determine the best way for data to reach its ultimate destination. Switches connect devices and manage node-to-node communication inside a network, ensuring that bundles of information traveling across the network reach their ultimate destination. The essence of any Business function is an efficient network without which entire operations could be paralysed. "
+    }
+  },
+  {
+    "id": "service-detail-8",
+    "service": "service-1",
+    "name": "Leased Line and Smart Office solutions",
+    "image": "assets/images/services/corporate_solutions/detail-8.webp",
+    "description": {
+      "p1": "We offer enterprise solutions such as Internet Leased Line, PRI, SIP Trunk,MPLS, P2P connectivity, Smart Office Solutions , IVR and Toll Free services with SLA.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-9",
+    "service": "service-2",
+    "name": "Tactical Breaching Systems",
+    "image": "assets/images/services/military_solutions/detail-1.jpeg",
+    "description": {
+      "p1": "We partner with San Tactical Breaching Systems. A patented technology developed by San Tactical Systems.",
+      "p2": "SAN Ltd World Leading Tactical Breaching Solutions incorporates innovative technologies based on light materials, allowing one operator to obtain a powerful set of tools that can break into any structure at top speed.",
+      "p3": "At SAN Ltd we believe that Fast Response, Mobility, and Multi-functional capabilities are major elements that enable the defense and rescue forces to perform their tasks in maximum capability, therefore, we continue to develop, manufacture, and design lighter and more compact kits to meet optimal operational requirements. SAN’s additional challenge is to identify and customize our forced entry gear to suit the needs of our customers, that is why we work separately with the Police & HLS units, Fire Fighters& Rescue teams, Military & Special forces and make the right adaptation to make the perfect fit. As a world leader in our category we also offer training courses and reusable training aids developed by us, to train our tactical operators for every potential scenario."
+    }
+  },
+  {
+    "id": "service-detail-10",
+    "service": "service-2",
+    "name": "Perimeter Intrusion Detection Systems",
+    "image": "assets/images/services/military_solutions/detail-2.webp",
+    "description": {
+      "p1": "A perimeter intrusion detection system (PIDS) is a device or sensor that detects the presence of an intruder attempting to breach the physical perimeter of a property, building, or other secured area. A PIDS is typically deployed as part of an overall security system and is often found in high-security environments such as correctional facilities, airports,military bases, and nuclear plants.",
+      "categories": {
+        "title": "",
+        "description": "Typical sensors include",
+        "details": [
+          { "description": "Active IR" },
+          {"description": "Break wire" },
+          {"description": "Electrostatic field" },
+          {"description": "Fence detection" },
+          {"description": "Ground motion" },
+          {"description": "Magnetic" },
+          {"description": "Microwave detectors" },
+          {"description": "Near-IR beam break" },
+          {"description": "Passive IR" },
+          {"description": "Ported coaxial cable" },
+          {"description": "Taut wire" },
+          {"description": "Seismic" }
+        ]
+      }
+    }
+  },
+  {
+    "id": "service-detail-11",
+    "service": "service-2",
+    "name": "UAV – Drones",
+    "image": "assets/images/services/military_solutions/detail-3.jpeg",
+    "description": {
+      "p1": "Drones being the 'Eyes in the Sky' , the new dimension of Intelligence, Survey and Reconnasaince , we work with various manufacturers to equip our authorities and clients with the cutting edge technology and agility to carry out their operations .",
+      "p2": "Be it Security, Agriculture, Medical or Rescue and Evacuations, Drones are the future."
+    }
+  },
+  {
+    "id": "service-detail-12",
+    "service": "service-2",
+    "name": "Executive Protection Gear ",
+    "image": "assets/images/services/military_solutions/detail-4.jpeg",
+    "description": {
+      "p1": "EP Gear play an important role in the protection industry and the quality of equipment including protective suits play a vital role in protecting the agents who in charge of the tough tasks.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-13",
+    "service": "service-2",
+    "name": "Traffic Enforcement Systems",
+    "image": "assets/images/services/military_solutions/detail-5.jpeg",
+    "description": {
+      "p1": "With the evolution of  infrastructure, high speed and sophisticated vehicles there is an immediate need to control violations related to overspeeding, drunken driving, checking the involvement of vehicles in heinous crimes, stolen vehicles and to check safety measures such as helmetless riding, lane violations etc.",
+      "p2": "We partner with some the the leading countries in the detection and enforcement systems such as Lidar based speed detection, Alcohol analyzers, Transport enforcement systems etc."
+    }
+  },
+  {
+    "id": "service-detail-14",
+    "service": "service-2",
+    "name": "Rescue and Evacuation Systems ",
+    "image": "assets/images/services/military_solutions/detail-6.jpeg",
+    "description": {
+      "p1": "The need of sophisticated technology in rescue and evacuations is the essence for saving human lives specially with time being a core constraint.",
+      "p2": "We help authorities with the state of the art rescue and evacuation systems be it Fire Fighting or Disaster Rescue and Relief."
+    }
+  },
+  {
+    "id": "service-detail-15",
+    "service": "service-2",
+    "name": "Thermal Imaging and Night Vision Equipment ",
+    "image": "assets/images/services/military_solutions/detail-7.webp",
+    "description": {
+      "p1": "Thermal imaging cameras are devices that translate thermal energy (heat) into visible light in order to analyze a particular object or scene. The image produced is known as a thermogram and is analyzed through a process called thermography. Thermal imaging cameras are sophisticated devices that process the captured image and display it on a screen. These images can be used for immediate diagnosis or processed through specialized software for further evaluation, accuracy and report output.",
+      "p2": "Thermal imaging cameras take measuring temperature to the next level; instead of getting a number for the temperature you get a picture showing the temperature differences of a surface.Since thermal imaging cameras can 'see' through darkness or smoke, they allow firefighters to quickly find the seat of a structure fire, or see the heat signature of visually obscured victims. They can be used to search for victims outdoors on a cool night, spot smoldering fires inside a wall, or detect overheating electrical wiring.",
+      "p3": "Thermal imaging cameras were credited with saving multiple lives per year through victim identification and removal from low visibility conditions as early as 1999. Mechanical and building construction technicians who work with thermal insulation use imaging to quickly identify leaks, which is important to maintain efficient temperature regulation in a building. At a glance, they can analyse a building's structure and spot faults. Thermal Imaging is of immense importance to the Military and Rescue forces. We customize the systems as per the voice of the customer or authority."
+    }
+  },
+  {
+    "id": "service-detail-16",
+    "service": "service-3",
+    "name": "Risk Assessment & Mitigation",
+    "image": "assets/images/services/consulting/detail-1.jpeg",
+    "description": {
+      "p1": "We help corporates , PSUs, Educational Institutions and Manufacturing verticals with Business Continuity Audits and Risk Assessment and Mitigation.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-17",
+    "service": "service-3",
+    "name": "Physical Protection System Audits",
+    "image": "assets/images/services/consulting/detail-2.webp",
+    "description": {
+      "p1": "Providing key insights through audits to our Law Enforcement, Universities on the Physical Protection Systems has been our core competence.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-18",
+    "service": "service-4",
+    "name": "Cybersecurity and Hygiene",
+    "image": "assets/images/services/training/detail-1.jpeg",
+    "description": {
+      "p1": "Training Schools and Educational institutions on the importance of Safe Practices and necessary hygiene in the Virtual space especially post the pandemic has helped several institutions and encuraged us to formulate programs for both the faculty and students",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-19",
+    "service": "service-4",
+    "name": "Prevention of Sexual Harassment at Workplace ",
+    "image": "assets/images/services/training/detail-2.webp",
+    "description": {
+      "p1": "We help corporates, educational institutions with Safe Workplace enviroments protectiong the organization and employees, Students and Teachers against and Sexual Harassment at Workplace and Child safety programs through Trainings and Awareness.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-20",
+    "service": "service-4",
+    "name": "Prevention of Child Sexual Offences ",
+    "image": "assets/images/services/training/detail-3.webp",
+    "description": {
+      "p1": "We help corporates, educational institutions with Safe Workplace enviroments protectiong the organization and employees, Students and Teachers against and Sexual Harassment at Workplace and Child safety programs through Trainings and Awareness.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-21",
+    "service": "service-4",
+    "name": "Women Safety ",
+    "image": "assets/images/services/training/detail-4.webp",
+    "description": {
+      "p1": "We help corporates, educational institutions with Safe Workplace enviroments protectiong the organization and employees, Students and Teachers against and Sexual Harassment at Workplace and Child safety programs through Trainings and Awareness.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-22",
+    "service": "service-4",
+    "name": "Workplace Violence Mitigation",
+    "image": "assets/images/services/training/detail-5.jpeg",
+    "description": {
+      "p1": "Helping organizations with prevention and mitigation of Workplace violence through discipline and background screening and interview of employees.",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-23",
+    "service": "service-5",
+    "name": "IMRS-Incident Management and Response System",
+    "image": "assets/images/services/cem/detail-1.jpeg",
+    "description": {
+      "p1": "",
+      "p2": ""
+    }
+  },
+  {
+    "id": "service-detail-24",
+    "service": "service-5",
+    "name": "CEM-Critical Event Management",
+    "image": "assets/images/services/cem/detail-2.webp",
+    "description": {
+      "p1": "",
+      "p2": ""
+    }
+  }
+]

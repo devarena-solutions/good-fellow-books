@@ -1,0 +1,57 @@
+.facts {
+  width: 100%;
+  min-height: 400px;
+  //background: url(../../assets/photo-lock.jpeg);
+  text-align: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 40px 0;
+
+  .overlay {
+    min-height: 400px;
+    opacity: 0.8;
+    background: #13350182;
+    padding-top: 5px;
+  }
+
+  .container {
+    color: #fff;
+    z-index: 100;
+    padding: 10px 0;
+
+    .facts-grid-item {
+      margin: 70px 0;
+
+      .icon-container {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #icon {
+          margin-top: 40px;
+          font-size: 60px;
+        }
+
+        .counter {
+          color: #fff;
+          font-size: 50px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .description {
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          word-spacing: 1px;
+          font-variant: small-caps;
+          font-style: oblique;
+        }
+      }
+    }
+  }
+}
