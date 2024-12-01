@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgood_fellow_books=self.webpackChunkgood_fellow_books||[]).push([[750],{77750:(o,s,e)=>{e.r(s),e.d(s,{withRouter:()=>k});var t=e(73216),r=e(70579);const k=o=>s=>{const e=(0,t.Zp)();return(0,r.jsx)(o,{history:e,...s})}}}]);
+//# sourceMappingURL=750.b7c767a4.chunk.js.map

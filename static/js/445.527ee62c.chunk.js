@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgood_fellow_books=self.webpackChunkgood_fellow_books||[]).push([[445],{69445:(o,e,s)=>{o.exports=s.p+"static/media/logo.6ce24c58023cc2f8fd88.svg"}}]);

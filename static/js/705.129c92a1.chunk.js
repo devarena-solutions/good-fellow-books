@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgood_fellow_books=self.webpackChunkgood_fellow_books||[]).push([[705],{54705:(e,o,s)=>{e.exports=s.p+"static/media/facts.ae6329332dc291632fa1.webp"}}]);
