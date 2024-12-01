@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Button from '@mui/material/Button';
 import HomeAboutUs from "../components/home/aboutUs";
-import OurServices from "../components/home/ourServices";
 import slider1Img from "../assets/slider-1.webp";
 
 import "../styles/home/home.scss";
