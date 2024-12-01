@@ -1,7 +1,7 @@
 .facts {
   width: 100%;
-  min-height: 400px;
-  //background: url(../../assets/photo-lock.jpeg);
+  min-height: 200px;
+  background: url(../../assets/facts.webp);
   text-align: center;
   position: relative;
   background-position: center;
@@ -16,42 +16,40 @@
     padding-top: 5px;
   }
 
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-variant: small-caps;
+    font-style: oblique;
+  }
+
   .container {
     color: #fff;
     z-index: 100;
-    padding: 10px 0;
+    padding: 10px 20px;
+    
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      
+      p {
+        font-weight: bold;
+      }
 
-    .facts-grid-item {
-      margin: 70px 0;
+      .small-text {
+        text-align: center;
+        font-size: 22px;
+      }
 
-      .icon-container {
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        #icon {
-          margin-top: 40px;
-          font-size: 60px;
-        }
-
-        .counter {
-          color: #fff;
-          font-size: 50px;
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-
-        .description {
-          font-size: 18px;
-          font-weight: bold;
-          letter-spacing: 1px;
-          word-spacing: 1px;
-          font-variant: small-caps;
-          font-style: oblique;
-        }
+      .large-text {
+        text-align: left;
+        line-height: 2;
+        font-size: 18px;
       }
     }
+
   }
 }

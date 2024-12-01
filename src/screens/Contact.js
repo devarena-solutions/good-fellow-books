@@ -10,6 +10,7 @@ import TextField from "@mui/material/TextField";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from '@mui/material/Alert';
 
+import contactUsImg from "../assets/contact-us.webp";
 import loadSMTP from "../utils/loadSMTP";
 
 import "../styles/contact.scss";
@@ -75,7 +76,7 @@ export default function Contact() {
         Password: process.env.REACT_APP_EMAIL_PASSWORD,
         To: JSON.parse(process.env.REACT_APP_EMAIL_TO_LIST),
         From: process.env.REACT_APP_EMAIL_FROM,
-        Subject: "Enhansafe Website visitor " + name + " needs help!",
+        Subject: "Good Fellow Books Website visitor " + name + " needs help!",
         Body: messageData,
       }).then((message) => {
         console.log("message sent successfully!");
@@ -101,19 +102,10 @@ export default function Contact() {
         </Alert>
       </Snackbar>
       <div className="container-img">
-{/*         <img className="contactImg" src={Cwsd} alt="contact" />
- */}        <h1 className="us">Contact Us</h1>
+        <h1 className="us">Contact Us</h1>
       </div>
       <Grid container spacing={5} className="contact-form-container">
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={8}
-          lg={8}
-          xl={8}
-          className="contact-form"
-        >
+        <Grid size={{ xs: 12, sm: 12, md: 8, lg: 8, xl: 8 }} className="contact-form">
           <form className="form" onSubmit={(event) => handleFormSubmit(event)}>
             <TextField
               id="outlined-basic-name"
@@ -150,16 +142,16 @@ export default function Contact() {
             </Button>
           </form>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} xl={4} className="blocks">
-{/*           <img src={ContactUs} alt="contact-us" className="contact-banner" />
- */}        </Grid>
+        <Grid size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className="blocks">
+          <img src={contactUsImg} alt="contact-us" className="contact-banner" />
+         </Grid>
       </Grid>
 
       <Grid container spacing={3} className="container">
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className="blocks">
+        <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className="blocks">
           <div className="photos">
             <a
-              href="https://goo.gl/maps/Q6VPtC2kapBWwFXd9"
+              href="https://maps.app.goo.gl/unctPvwDZWW5oNS96"
               rel="noopener noreferrer"
               target="_blank"
               className="contact-item"
@@ -167,56 +159,55 @@ export default function Contact() {
               <HomeRoundedIcon className="icons" />
               <h3>Address</h3>
               <p>
-                Plot no 4, 101 & 102, Melinkeri Apartments S. No 149/1A, 
-                Lane between Parag Rote Hospital and ITI AundhII, 
-                opposite Indira School, Aundh, Pune, Maharashtra 411007
+                Raunak city, jail Road, Adharwadi, Khadakpada, Kalyan, Maharashtra 421301, India
               </p>
             </a>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className="blocks">
+        <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className="blocks">
           <div className="photos">
             <MailOutlineRoundedIcon className="icons" />
             <h3>Email Address</h3>
 
-            <a href="mailto:tanushree@enhansafe.com" className="contact-item">
-              <p>tanushree@enhansafe.com</p>
+            <a href="mailto:vijay.gehlot@devarena.in" className="contact-item">
+              <p>vijay.gehlot@devarena.in</p>
             </a>
-            <a href="mailto:sharad@enhansafe.com" className="contact-item">
-              <p>sharad@enhansafe.com</p>
+            <a href="mailto:brahmdev.pandey@devarena.in" className="contact-item">
+              <p>brahmdev.pandey@devarena.in</p>
             </a>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className="blocks">
+        <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className="blocks">
           <div className="photos">
             <PhoneRoundedIcon className="icons" />
             <h3>Contact Number</h3>
-            <a href="tel://+918888827680" className="contact-item">
-              <p>+91 8888827680</p>
+            <a href="tel://+918412885352" className="contact-item">
+              <p>+91 84128 85352</p>
             </a>
-            <a href="tel://+919011616169" className="contact-item">
-              <p>+91 9011616169</p>
+            <a href="tel://+46767086309" className="contact-item">
+              <p>+46 767086309</p>
             </a>
           </div>
         </Grid>
 
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className="blocks">
+        <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className="blocks">
           <div className="photos">
             <a href="/" className="contact-item">
               <PublicRoundedIcon className="icons" />
               <h3>Website</h3>
-              <p href="/contact">http://www.enhansafe.com</p>
+              <p href="/contact">http://www.devarena.in</p>
             </a>
           </div>
         </Grid>
       </Grid>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11500.231423862417!2d73.80575695824619!3d18.559456221120218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3c605c0001%3A0xe296573b358b16b2!2sEnhansafe%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1728101574845!5m2!1sen!2sin" 
-        className="map"
-        style={{ border:0 }}
-        allowfullscreen={true}
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4202.939604561818!2d73.1220024!3d19.262281200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be797255b6bf5b9%3A0x45539abad50f9d6c!2sDevArena%20Solutions!5e1!3m2!1sen!2sse!4v1733090068507!5m2!1sen!2sse"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade" />
     </div>
   );
 }

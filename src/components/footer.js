@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid2';
 import { NavLink, useNavigate } from 'react-router-dom';
 import ArrowIcon from '@mui/icons-material/ArrowRight';
 import HeartIcon from '@mui/icons-material/Favorite';
-import logo from '../assets/logo-enhansafe.jpeg';
 
 import '../styles/footer.scss';
 
@@ -17,17 +16,18 @@ const Footer = () => {
         spacing={5}
         className="footer-grid-container"
       >
-        <Grid item xs={12} sm={6} md={6} lg={3} xl={3} className="no-gutters">
+        <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }} className="no-gutters">
           <div className="contact-info">
             <div className="navbar-brand" onClick={() => navigate('/')}>
-              <img src={logo} className="logo" alt="RBlunt" />
+              {/* <img src={logo} className="logo" alt="RBlunt" /> */}
+              <p>Good Fellow Books</p>
             </div>
             <p className="para">
-              We at Enhansafe , intend create the basic awareness of Safety and Security with audited Surveillance systems specifically Crime and Loss Prevention though various technologies such as Video Surveillance, RFID based technology, Biometric and Face recognition technology, Enviromental design, Adaptive Traffic Control systems, Police Security Systems, Search & Frisking equipment and Intelligent Surveillance systems.
+              We are Good Fellow Books. We have been serving since 2021 and we're passionate about making education accessible to everyone, regardless of their circumstances. We're committed to providing educational books to everyone because knowledge knows no limits.
             </p>
             <div className="social-info">
               {/* <a
-                href="https://www.facebook.com/suneettgl/"
+                href="https://www.facebook.com/goodfellowbooks/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -35,7 +35,7 @@ const Footer = () => {
                 <FacebookIcon className="social-media-icon fb-icon" />
               </a>
               <a
-                href="https://www.instagram.com/Enhansafeinteriors/"
+                href="https://www.instagram.com/goodfellowbooks/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={3} xl={3} className="no-gutters">
+        <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }} className="no-gutters">
           <div className="useful-links footer-item">
             <h5 className="widget-title">Explore</h5>
             <ul>
@@ -61,17 +61,6 @@ const Footer = () => {
                 <ArrowIcon id="icon" />
                 <NavLink key={'home'} className={'menu'} to={'/'} exact={true}>
                   Home
-                </NavLink>
-              </li>
-              <li>
-                <ArrowIcon id="icon" />
-                <NavLink
-                  key={'services'}
-                  className={'menu'}
-                  to={'/services'}
-                  exact={true}
-                >
-                  Services
                 </NavLink>
               </li>
               <li>
@@ -99,47 +88,11 @@ const Footer = () => {
             </ul>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={3} xl={3} className="no-gutters">
-          <div className="useful-links footer-item">
-            <h5 className="widget-title">Blogs</h5>
-            <ul>
-              <li>
-                <ArrowIcon id="icon" />
-                <NavLink key={'home'} className={'menu'} to={'/blogs/risk-assessment'} exact={true}>
-                  Risk Assessment
-                </NavLink>
-              </li>
-              <li>
-                <ArrowIcon id="icon" />
-                <NavLink
-                  key={'services'}
-                  className={'menu'}
-                  to={'/blogs/physical-security'}
-                  exact={true}
-                >
-                  Physical Security
-                </NavLink>
-              </li>
-              <li>
-                <ArrowIcon id="icon" />
-                <NavLink
-                  key={'about'}
-                  className={'menu'}
-                  to={'/blogs/planning'}
-                  exact={true}
-                >
-                  Planning & Design
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={6} md={6} lg={3} xl={3} className="no-gutters">
+        <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }} className="no-gutters">
           <div className="about footer-item">
             <h5 className="widget-title">About</h5>
             <span>
-            Enhansafe India Pvt Ltd., Founded in 2013, by Sharad Srivastava and Tanushree Srivastava with the vision of “Enhanced Safety and Surveillance. 
-            </span>
+              Good fellow books was established to make a difference in the lives of children and young adults around the world. We believe that education is the key to breaking the cycle of poverty and empowering individuals to reach their full potential.             </span>
           </div>
         </Grid>
         <Grid
@@ -162,7 +115,7 @@ const Footer = () => {
               <script type="text/javascript">
                 document.write(new Date().getFullYear());
               </script>
-              2021 All rights reserved to Enhansafe | This template is made with{' '}
+              2021 All rights reserved to GoodFellowBooks | This template is made with{' '}
               <HeartIcon className="icon" /> by{' '}
               <a
                 href="https://www.devarena.in"

@@ -7,7 +7,7 @@ import List from '@mui/material/List';
 import ListItem from "@mui/material/ListItem";
 import Divider from '@mui/material/Divider';
 import Drawer from "@mui/material/Drawer";
-import logo from "../assets/logo-enhansafe.jpeg";
+import logo from "../assets/logo.webp";
 
 import "../styles/header.scss";
 import ScrollToTop from "../ScrollToTop";
@@ -45,7 +45,7 @@ const Header = () => {
       >
         <div className="logo">
           <p className="navbar-brand" onClick={() => navigate("/")}>
-            <img src={logo} alt="Enhansafe" />
+            <img src={logo} alt="logo" />
           </p>
         </div>
         <List>
@@ -113,7 +113,7 @@ const Header = () => {
       <ScrollToTop />
       <div className={headerClassName}>
         <div className="logo" onClick={() => navigate("/")}>
-          <img src={logo} alt="Enhansafe" />
+          <img src={logo} alt="logo" />
         </div>
         <Drawer
           open={drawerOpen}

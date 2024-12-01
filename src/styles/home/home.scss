@@ -19,6 +19,7 @@ $tom-thumb-light: map_get($base-colors, "tom-thumb-light");
 $mirage: map_get($base-colors, "mirage");
 $mantis: map_get($font-colors, "mantis");
 
+
 .home-page {
   display: flex;
   flex-direction: column;
@@ -111,7 +112,7 @@ $mantis: map_get($font-colors, "mantis");
       left: 50px;
 
       h1 {
-        color: $white;
+        color: $niagara;
         text-transform: capitalize;
         line-height: 0.8;
         font-size: 56px;
@@ -120,8 +121,8 @@ $mantis: map_get($font-colors, "mantis");
       }
 
       h3 {
-        color: #fdc312;
-        font-size: 32px;
+        color: $black;
+        font-size: 24px;
         font-weight: 400;
         text-transform: capitalize;
         letter-spacing: 1px;
@@ -136,7 +137,7 @@ $mantis: map_get($font-colors, "mantis");
       }
 
       .learn-more-button {
-        background-color: $tom-thumb-light;
+        background-color: $dodger-blue;
         color: $white;
         letter-spacing: 1px;
         font-weight: bold;

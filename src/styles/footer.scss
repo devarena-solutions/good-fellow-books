@@ -26,11 +26,10 @@ $white: map_get($font-colors, 'white');
   }
 
   .footer-grid-container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 
     .no-gutters {
-      width: 100%;
       display: flex;
       justify-content: flex-start;
     }

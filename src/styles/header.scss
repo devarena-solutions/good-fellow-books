@@ -19,9 +19,11 @@ $light_gray: map_get($font-colors, "light-gray");
 }
 
 .menu-drawer {
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+
   .menu-container {
     width: 250px;
-    background-color: #000;
+    //background-color: #000;
     height: 100%;
 
     .logo {
@@ -61,14 +63,15 @@ $light_gray: map_get($font-colors, "light-gray");
 .header-menu-area {
   display: flex;
   flex-direction: row;
-  background-color: black;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  //background-color: black;
   align-items: center;
   justify-content: space-between;
 
   color: #666666;
+  min-height: 100px;
 
   .logo {
-    width: 18%;
     color: black;
     margin-left: 50px;
 
@@ -214,8 +217,7 @@ $light_gray: map_get($font-colors, "light-gray");
   position: fixed;
   width: 100%;
   top: 0%;
-  background-color: black;
-  border-bottom: 1px solid #b19777;
+  background-color: white;
   z-index: 100;
   margin-top: 0;
 

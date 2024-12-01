@@ -6,18 +6,6 @@ const USER_MENU = [
     link: '/',
   },
   {
-    name: 'Services',
-    link: '/services',
-  },
-  {
-    name: 'Clients',
-    link: '/clients',
-  },
-  {
-    name: 'Blogs',
-    link: '/blogs',
-  },
-  {
     name: 'About',
     link: '/about',
   },
