@@ -1,6 +1,7 @@
 {
   "name": "good-fellow-books",
   "version": "0.1.0",
+  "homepage": "https://devarena-solutions.github.io/good-fellow-books/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.5",
