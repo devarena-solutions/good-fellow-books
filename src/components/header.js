@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { getMenu } from "../utils/menu";
 import { NavLink } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router";
-import { Menu as MenuIcon } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import List from '@mui/material/List';
 import ListItem from "@mui/material/ListItem";
 import Divider from '@mui/material/Divider';

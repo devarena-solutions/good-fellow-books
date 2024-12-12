@@ -17,10 +17,11 @@ $mantis: map_get($font-colors, "mantis");
 $niagara_dark: map_get($font-colors, "niagara_dark");
 $niagara: map_get($font-colors, "niagara");
 $burnt-sienna: map_get($font-colors, "burnt-sienna");
+$blue-bayoux: map_get($font-colors, "blue-bayoux");
 
 .about-us {
   margin-top: 80px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 
   img {
@@ -76,6 +77,12 @@ $burnt-sienna: map_get($font-colors, "burnt-sienna");
       z-index: 1;
       left: 80px;
       bottom: 0;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
     }
 
     .about-back-img {
@@ -132,6 +139,100 @@ $burnt-sienna: map_get($font-colors, "burnt-sienna");
       }
     }
 
+  }
+
+  .mission-container {
+    padding-top: 60px;
+
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        text-decoration: none;
+        background-image: url('../../assets/underline.png');
+        background-position: 54% 83%;
+        background-size: 94%;
+        background-repeat: no-repeat;
+      }
+
+      .description {
+        font-size: 20px;
+        text-align: center;
+        max-width: 550px;
+        letter-spacing: 1.5px;
+        margin-top: 10px;
+        color: $blue-bayoux;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .mission-content-wrap {
+    background-color: #f4f8ff;
+    border-radius: 10px;
+    padding: 35px;
+    transition: box-shadow .3s;
+
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+      cursor: pointer;
+    }
+
+    .mission-icon {
+      vertical-align: middle;
+      max-width: 100%;
+      display: inline-block;
+      width: 50px;
+      height: 70px;
+    }
+
+    .money-icon {
+      width: 70px;
+      height: 85px;
+    }
+
+    .mission-support-title {
+      color: $mantis;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-family: Jost Medium, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+    }
+
+    .mission-support-description {
+      text-align: left;
+      font-size: 18px;
+      letter-spacing: 1.3px;
+      word-spacing: 1px;
+    }
+
+    .support-button-link {
+      background-color: rgb(255, 255, 255);
+      border-color: rgb(235, 234, 234);
+      text-align: center;
+      border-radius: 31px;
+      justify-content: space-around;
+      align-items: center;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 20px;
+      }
+    }
   }
 
   @media only screen and (max-width: 570px) {

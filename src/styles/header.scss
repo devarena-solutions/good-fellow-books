@@ -5,6 +5,7 @@ $gurkha-light: map_get($base-colors, "gurkha-light");
 $mirage: map_get($base-colors, "mirage");
 $white: map_get($font-colors, "white");
 $light_gray: map_get($font-colors, "light-gray");
+$black: map_get($font-colors, "black");
 
 .navbar-brand {
   color: #000000;
@@ -41,7 +42,7 @@ $light_gray: map_get($font-colors, "light-gray");
       }
     }
 
-    ul>div {
+    ul > li {
       .menu {
         font-size: 13px;
         font-weight: 400;
@@ -49,7 +50,7 @@ $light_gray: map_get($font-colors, "light-gray");
         padding: 20px 15px;
         cursor: pointer;
         text-decoration: none;
-        color: $white;
+        color: $black;
         position: relative;
 
         &:hover {

@@ -249,7 +249,6 @@ $shuttle_gray: map_get($font-colors, "shuttle_gray");
 @media (min-width: 320px) and (max-width: 480px) {
   .contact-us {
     .container-img {
-      height: auto;
       .contactImg {
         height: 250px;
         width: 100%;
