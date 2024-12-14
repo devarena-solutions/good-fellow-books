@@ -56,7 +56,7 @@ export default function Contact() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    const messageData =
+     const messageData =
       "<b>Customer name: </b>" +
       name +
       "<br>" +
@@ -69,18 +69,33 @@ export default function Contact() {
       "<b>Message: </b>" +
       message;
 
-    if (loaded) {
+    /*if (loaded) {
       window.Email.send({
         Host: process.env.REACT_APP_EMAIL_HOST,
         Username: process.env.REACT_APP_EMAIL_USERNAME,
         Password: process.env.REACT_APP_EMAIL_PASSWORD,
-        To: JSON.parse(process.env.REACT_APP_EMAIL_TO_LIST),
+        To: process.env.REACT_APP_EMAIL_TO_LIST,
         From: process.env.REACT_APP_EMAIL_FROM,
         Subject: "Good Fellow Books Website visitor " + name + " needs help!",
         Body: messageData,
       }).then((message) => {
         console.log("message sent successfully!");
       });
+    }
+ */   
+      fetch('https://us-central1-brahmdev-ai-agent.cloudfunctions.net/sendEmail', {
+        method: 'POST',
+        /* headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }, */
+        body: JSON.stringify({
+          subject: "Good Fellow Books Website visitor " + name + " needs help!", 
+          body: messageData,
+        })
+      })
+        .then(response => console.log('Response ', response))
+        .catch(error => console.error('ERROR ', error))   
       setSnackBarStatus("success");
       setSnackBarAutoHideDuration(10000);
       setSnackBarMessage(
@@ -88,7 +103,7 @@ export default function Contact() {
       );
       setShowSnackBar(true);
       resetForm();
-    }
+    
   };
   return (
     <div className="contact-us">
@@ -97,9 +112,11 @@ export default function Contact() {
         autoHideDuration={snackBarAutoHideDuration}
         onClose={handleClose}
       >
-        <Alert onClose={handleClose} severity={snackBarStatus}>
-          {snackBarMessage}
-        </Alert>
+        <div>
+          <Alert onClose={handleClose} severity={snackBarStatus}>
+            {snackBarMessage}
+          </Alert>
+        </div>
       </Snackbar>
       <div className="container-img">
         <h1 className="us">Contact Us</h1>
