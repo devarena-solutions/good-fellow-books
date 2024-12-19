@@ -34,7 +34,7 @@ export const sendEmail = onRequest(async (request, response) => {
     logger.info('BODY IS ', body)
     const mailOptions = {
         from: 'support@fellowbooks.com',
-        to: 'pandey.dev25@gmail.com',
+        to: 'pandey.dev25@gmail.com, support@fellowbooks.com',
         subject: subject,
         html: body
     };

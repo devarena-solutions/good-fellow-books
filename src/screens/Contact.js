@@ -10,7 +10,7 @@ import TextField from "@mui/material/TextField";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from '@mui/material/Alert';
 
-import contactUsImg from "../assets/contact-us.webp";
+import contactUsImg from "../assets/slider-1.jpeg";
 import loadSMTP from "../utils/loadSMTP";
 
 import "../styles/contact.scss";

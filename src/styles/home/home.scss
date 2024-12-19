@@ -9,6 +9,8 @@ $white: map_get($font-colors, "white");
 $alto: map_get($font-colors, "alto");
 $black: map_get($font-colors, "black");
 $niagara: map_get($font-colors, "niagara");
+$turquoise: map_get($font-colors, "turquoise");
+$maroon: map_get($font-colors, "maroon");
 $yellow-orange: map_get($font-colors, "yellow-orange");
 $burnt-sienna: map_get($font-colors, "burnt-sienna");
 $dodger-blue: map_get($font-colors, "dodger-blue");
@@ -112,7 +114,7 @@ $mantis: map_get($font-colors, "mantis");
       left: 50px;
 
       h1 {
-        color: $niagara;
+        color: $turquoise;
         text-transform: capitalize;
         line-height: 0.8;
         font-size: 56px;
