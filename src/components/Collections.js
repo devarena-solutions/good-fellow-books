@@ -6,6 +6,8 @@ import biographyImg from '../assets/collections/biography.png';
 import scicenceImg from '../assets/collections/science.png';
 import mathsImg from '../assets/collections/maths.png';
 import entranceImg from '../assets/collections/entrance.avif';
+import religiousImg from '../assets/collections/religious.png';
+import sportsImg from '../assets/collections/sports.png';
 
 import '../styles/collections.scss';
 
@@ -47,6 +49,16 @@ export default function Collections() {
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
                     <img src={entranceImg} />
                     <span className='collection-title'>Entrance</span>
+                </Grid>
+
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
+                    <img src={religiousImg} />
+                    <span className='collection-title'>Religious</span>
+                </Grid>
+
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
+                    <img src={sportsImg} />
+                    <span className='collection-title'>Sports</span>
                 </Grid>
             </Grid>
         </div>
