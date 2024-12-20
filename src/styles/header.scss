@@ -3,7 +3,7 @@
 $tom-thumb: map_get($base-colors, "tom-thumb");
 $gurkha-light: map_get($base-colors, "gurkha-light");
 $mirage: map_get($base-colors, "mirage");
-$turquoise: map_get($font-colors, "turquoise");
+$teal: map_get($font-colors, "teal");
 $white: map_get($font-colors, "white");
 $light_gray: map_get($font-colors, "light-gray");
 $black: map_get($font-colors, "black");
@@ -113,13 +113,13 @@ $black: map_get($font-colors, "black");
     letter-spacing: 1.6px;
 
     &:hover {
-      color: $turquoise;
+      color: $teal;
       transition-duration: 500ms;
     }
   }
 
   .active-menu {
-    color: $turquoise;
+    color: $teal;
     border-left: 1px solid #ec5757;
     border-right: 1px solid #ec5757;
     font-weight: bold;

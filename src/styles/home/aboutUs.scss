@@ -16,8 +16,9 @@ $mirage: map_get($base-colors, "mirage");
 $mantis: map_get($font-colors, "mantis");
 $niagara_dark: map_get($font-colors, "niagara_dark");
 $niagara: map_get($font-colors, "niagara");
-$burnt-sienna: map_get($font-colors, "burnt-sienna");
+$burnt-maroon: map_get($font-colors, "burnt-maroon");
 $blue-bayoux: map_get($font-colors, "blue-bayoux");
+$teal: map_get($font-colors, "teal");
 
 .about-us {
   margin-top: 80px;
@@ -37,7 +38,7 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
     justify-content: flex-start;
 
     .about-us-text {
-      color: $niagara;
+      color: $teal;
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 22px;
@@ -51,7 +52,7 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-size: 32px;
-      color: #072366;
+      color: $burnt-maroon;
       font-weight: bold;
       text-decoration: none;
       font-style: unset;
@@ -65,8 +66,6 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
       margin: 10px 0 0 0;
     }
   }
-
-
 
   .about-img {
     position: relative;
@@ -95,12 +94,12 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
 
   h2 {
     line-height: 1.6;
-    color: $tom-thumb;
+    color: $teal;
     word-spacing: 3px;
   }
 
   h3 {
-    color: $niagara_dark;
+    color: $burnt-maroon;
     font-weight: bold;
     letter-spacing: 1.6px;
     font-size: 30px;
@@ -135,7 +134,7 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
 
       .icon {
         font-size: 72px;
-        color: $tom-thumb-light;
+        color: $burnt-maroon;
       }
     }
 
@@ -167,7 +166,7 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
         max-width: 550px;
         letter-spacing: 1.5px;
         margin-top: 10px;
-        color: $blue-bayoux;
+        color: $teal;
         font-weight: 500;
       }
     }
@@ -198,7 +197,7 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
     }
 
     .mission-support-title {
-      color: $mantis;
+      color: $teal;
       margin-top: 30px;
       margin-bottom: 30px;
       font-family: Jost Medium, sans-serif;

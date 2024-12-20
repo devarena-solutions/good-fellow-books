@@ -36,10 +36,14 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
     }
 
     .item-container {
-        //background-color: rgb(162, 119, 232);
         position: relative;
         border: 0.7px solid rgb(194, 191, 191);
         border-radius: 2px;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+        }
 
         .collection-title {
             position: absolute;

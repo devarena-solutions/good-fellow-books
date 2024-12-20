@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="contact-info">
             <div className="navbar-brand" onClick={() => navigate('/')}>
               {/* <img src={logo} className="logo" alt="RBlunt" /> */}
-              <p>Good Fellow Books</p>
+              <p>Good Fellow Books logo</p>
             </div>
             <p className="para">
               We are Good Fellow Books. We have been serving since 2021 and we're passionate about making education accessible to everyone, regardless of their circumstances. We're committed to providing educational books to everyone because knowledge knows no limits.

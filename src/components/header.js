@@ -113,7 +113,8 @@ const Header = () => {
       <ScrollToTop />
       <div className={headerClassName}>
         <div className="logo" onClick={() => navigate("/")}>
-          <img src={logo} alt="logo" />
+          {/* <img src={logo} alt="logo" /> */}
+          <p>Good fellow books logo</p>
         </div>
         <Drawer
           open={drawerOpen}

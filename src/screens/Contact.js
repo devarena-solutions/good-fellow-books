@@ -9,8 +9,10 @@ import PublicRoundedIcon from "@mui/icons-material/PublicRounded";
 import TextField from "@mui/material/TextField";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from '@mui/material/Alert';
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 import contactUsImg from "../assets/slider-1.jpeg";
+//import contactUsImg from "../assets/contact-us.png";
 import loadSMTP from "../utils/loadSMTP";
 
 import "../styles/contact.scss";
@@ -56,7 +58,7 @@ export default function Contact() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-     const messageData =
+    const messageData =
       "<b>Customer name: </b>" +
       name +
       "<br>" +
@@ -82,28 +84,28 @@ export default function Contact() {
         console.log("message sent successfully!");
       });
     }
- */   
-      fetch('https://us-central1-brahmdev-ai-agent.cloudfunctions.net/sendEmail', {
-        method: 'POST',
-        /* headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        }, */
-        body: JSON.stringify({
-          subject: "Good Fellow Books Website visitor " + name + " needs help!", 
-          body: messageData,
-        })
+ */
+    fetch('https://us-central1-brahmdev-ai-agent.cloudfunctions.net/sendEmail', {
+      method: 'POST',
+      /* headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }, */
+      body: JSON.stringify({
+        subject: "Good Fellow Books Website visitor " + name + " needs help!",
+        body: messageData,
       })
-        .then(response => console.log('Response ', response))
-        .catch(error => console.error('ERROR ', error))   
-      setSnackBarStatus("success");
-      setSnackBarAutoHideDuration(10000);
-      setSnackBarMessage(
-        "You message sent successfully! Our representative will contact you shortly!"
-      );
-      setShowSnackBar(true);
-      resetForm();
-    
+    })
+      .then(response => console.log('Response ', response))
+      .catch(error => console.error('ERROR ', error))
+    setSnackBarStatus("success");
+    setSnackBarAutoHideDuration(10000);
+    setSnackBarMessage(
+      "You message sent successfully! Our representative will contact you shortly!"
+    );
+    setShowSnackBar(true);
+    resetForm();
+
   };
   return (
     <div className="contact-us">
@@ -119,7 +121,7 @@ export default function Contact() {
         </div>
       </Snackbar>
       <div className="container-img">
-        <h1 className="us">Contact Us</h1>
+        {/* <h1 className="us">Contact Us</h1> */}
       </div>
       <Grid container spacing={5} className="contact-form-container">
         <Grid size={{ xs: 12, sm: 12, md: 8, lg: 8, xl: 8 }} className="contact-form">
@@ -161,7 +163,48 @@ export default function Contact() {
         </Grid>
         <Grid size={{ xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }} className="blocks">
           <img src={contactUsImg} alt="contact-us" className="contact-banner" />
-         </Grid>
+
+          {/* <div class="wrapper">
+              <div class="icon facebook">
+                <div class="tooltip">
+                  Facebook
+                  <br />
+                  @Shraddainteriors
+                </div>
+                <a
+                  href="https://www.facebook.com/suneettgl/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FacebookIcon className="social"></FacebookIcon>
+                </a>
+              </div>
+              <div class="icon instagram">
+                <div class="tooltip">
+                  Instagram
+                  <br />
+                  good_fellowbooks
+                </div>
+                <a
+                  href="https://www.instagram.com/good_fellowbooks/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InstagramIcon className="social"></InstagramIcon>
+                </a>
+              </div>
+              <div class="icon whatsapp">
+                <div class="tooltip">
+                  Whatsapp
+                  <br />
+                  9552549493
+                </div>
+                <a href="tel://+919552549493">
+                  <WhatsAppIcon className="social"></WhatsAppIcon>
+                </a>
+              </div>
+            </div> */}
+        </Grid>
       </Grid>
 
       <Grid container spacing={3} className="container">
@@ -171,13 +214,19 @@ export default function Contact() {
               href="https://maps.app.goo.gl/unctPvwDZWW5oNS96"
               rel="noopener noreferrer"
               target="_blank"
-              className="contact-item"
+              className="contact-item wrapper-social"
             >
               <HomeRoundedIcon className="icons" />
-              <h3>Address</h3>
-              <p>
-                Raunak city, jail Road, Adharwadi, Khadakpada, Kalyan, Maharashtra 421301, India
-              </p>
+              <div class="icon instagram">
+                <a
+                  href="https://www.instagram.com/good_fellowbooks/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InstagramIcon className="social-icon"></InstagramIcon>
+                  <p>good_fellowbooks</p>
+                </a>
+              </div>
             </a>
           </div>
         </Grid>
@@ -186,11 +235,8 @@ export default function Contact() {
             <MailOutlineRoundedIcon className="icons" />
             <h3>Email Address</h3>
 
-            <a href="mailto:vijay.gehlot@devarena.in" className="contact-item">
-              <p>vijay.gehlot@devarena.in</p>
-            </a>
             <a href="mailto:brahmdev.pandey@devarena.in" className="contact-item">
-              <p>brahmdev.pandey@devarena.in</p>
+              <p>supoort@fellowbooks.com</p>
             </a>
           </div>
         </Grid>
@@ -198,11 +244,8 @@ export default function Contact() {
           <div className="photos">
             <PhoneRoundedIcon className="icons" />
             <h3>Contact Number</h3>
-            <a href="tel://+918412885352" className="contact-item">
-              <p>+91 84128 85352</p>
-            </a>
-            <a href="tel://+46767086309" className="contact-item">
-              <p>+46 767086309</p>
+            <a href="tel://917048896734" className="contact-item">
+              <p>+91 70488 96734</p>
             </a>
           </div>
         </Grid>
@@ -212,19 +255,19 @@ export default function Contact() {
             <a href="/" className="contact-item">
               <PublicRoundedIcon className="icons" />
               <h3>Website</h3>
-              <p href="/contact">http://www.devarena.in</p>
+              <p href="/contact">http://www.fellowbooks.com</p>
             </a>
           </div>
         </Grid>
       </Grid>
-      <iframe
+      {/* <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4202.939604561818!2d73.1220024!3d19.262281200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be797255b6bf5b9%3A0x45539abad50f9d6c!2sDevArena%20Solutions!5e1!3m2!1sen!2sse!4v1733090068507!5m2!1sen!2sse"
         width="600"
         height="450"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade" />
+        referrerPolicy="no-referrer-when-downgrade" /> */}
     </div>
   );
 }
