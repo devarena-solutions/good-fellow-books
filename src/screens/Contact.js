@@ -71,20 +71,6 @@ export default function Contact() {
       "<b>Message: </b>" +
       message;
 
-    /*if (loaded) {
-      window.Email.send({
-        Host: process.env.REACT_APP_EMAIL_HOST,
-        Username: process.env.REACT_APP_EMAIL_USERNAME,
-        Password: process.env.REACT_APP_EMAIL_PASSWORD,
-        To: process.env.REACT_APP_EMAIL_TO_LIST,
-        From: process.env.REACT_APP_EMAIL_FROM,
-        Subject: "Good Fellow Books Website visitor " + name + " needs help!",
-        Body: messageData,
-      }).then((message) => {
-        console.log("message sent successfully!");
-      });
-    }
- */
     fetch('https://us-central1-brahmdev-ai-agent.cloudfunctions.net/sendEmail', {
       method: 'POST',
       /* headers: {
@@ -244,8 +230,8 @@ export default function Contact() {
           <div className="photos">
             <PhoneRoundedIcon className="icons" />
             <h3>Contact Number</h3>
-            <a href="tel://917048896734" className="contact-item">
-              <p>+91 70488 96734</p>
+            <a href="tel://917801986904" className="contact-item">
+              <p>+91 78019 86904</p>
             </a>
           </div>
         </Grid>

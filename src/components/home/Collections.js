@@ -1,15 +1,15 @@
 import Grid from '@mui/material/Grid2';
 
-import fantasyImg from '../assets/collections/fantasy.avif';
-import historyImg from '../assets/collections/history.png';
-import biographyImg from '../assets/collections/biography.png';
-import scicenceImg from '../assets/collections/science.png';
-import mathsImg from '../assets/collections/maths.png';
-import entranceImg from '../assets/collections/entrance.avif';
-import religiousImg from '../assets/collections/religious.png';
-import sportsImg from '../assets/collections/sports.png';
+import fantasyImg from '../../assets/collections/fantasy.avif';
+import historyImg from '../../assets/collections/history.png';
+import biographyImg from '../../assets/collections/biography.png';
+import scicenceImg from '../../assets/collections/science.png';
+import mathsImg from '../../assets/collections/maths.png';
+import entranceImg from '../../assets/collections/entrance.avif';
+import religiousImg from '../../assets/collections/religious.png';
+import sportsImg from '../../assets/collections/sports.png';
 
-import '../styles/collections.scss';
+import '../../styles/home/collections.scss';
 
 export default function Collections() {
     return (
@@ -21,6 +21,21 @@ export default function Collections() {
                 </span>
             </Grid>
             <Grid container spacing={5}>
+            <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
+                    <img src={mathsImg} />
+                    <span className='collection-title'>Mathematics</span>
+                </Grid>
+
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
+                    <img src={scicenceImg} />
+                    <span className='collection-title'>Science</span>
+                </Grid>
+
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
+                    <img src={entranceImg} />
+                    <span className='collection-title'>Entrance</span>
+                </Grid>
+
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
                     <img src={fantasyImg} />
                     <span className='collection-title'>Fantasy</span>
@@ -34,21 +49,6 @@ export default function Collections() {
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
                     <img src={biographyImg} />
                     <span className='collection-title'>Biography</span>
-                </Grid>
-
-                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
-                    <img src={scicenceImg} />
-                    <span className='collection-title'>Science</span>
-                </Grid>
-
-                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
-                    <img src={mathsImg} />
-                    <span className='collection-title'>Mathematics</span>
-                </Grid>
-
-                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
-                    <img src={entranceImg} />
-                    <span className='collection-title'>Entrance</span>
                 </Grid>
 
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>

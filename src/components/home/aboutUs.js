@@ -22,7 +22,7 @@ export default function HomeAboutUs() {
 
       <Grid container spacing={2} className="box-icon">
         <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className='text-container'>
-          <p className="about-us-text">About Our Foundation</p>
+          <p className="about-us-text">About Our Organisation</p>
           <p className="container-title">We Are In A Mission To Spread Knowledge</p>
           <h6>
             Thank you for visiting our website and showing your interest in our business.

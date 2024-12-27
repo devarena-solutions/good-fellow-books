@@ -1,4 +1,4 @@
-@import "./variable.scss";
+@import "../variable.scss";
 
 $blue-bayoux: map_get($font-colors, "blue-bayoux");
 
@@ -18,7 +18,7 @@ $blue-bayoux: map_get($font-colors, "blue-bayoux");
             font-weight: bold;
             letter-spacing: 1.6px;
             text-decoration: none;
-            background-image: url('../assets/underline.png');
+            background-image: url('../../assets/underline.png');
             background-position: 54% 83%;
             background-size: 94%;
             background-repeat: no-repeat;

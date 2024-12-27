@@ -9,7 +9,8 @@ import "../styles/about.scss";
 import { withRouter } from "../hooks/withRouter";
 import { useNavigate } from "react-router-dom";
 import Facts from "../components/home/facts";
-import Collections from "../components/Collections";
+import Collections from "../components/home/Collections";
+import OrderBook from "../components/home/OrderBook";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -39,6 +40,8 @@ const Home = () => {
       <HomeAboutUs />
 
       <Collections />
+
+      <OrderBook />
 
       <Facts />
 
