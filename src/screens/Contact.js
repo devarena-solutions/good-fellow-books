@@ -5,11 +5,12 @@ import Button from "@mui/material/Button";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
-import PublicRoundedIcon from "@mui/icons-material/PublicRounded";
+import LocationIcon from "@mui/icons-material/LocationOn";
 import TextField from "@mui/material/TextField";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from '@mui/material/Alert';
 import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
 
 import contactUsImg from "../assets/slider-1.jpeg";
 //import contactUsImg from "../assets/contact-us.png";
@@ -73,10 +74,6 @@ export default function Contact() {
 
     fetch('https://us-central1-brahmdev-ai-agent.cloudfunctions.net/sendEmail', {
       method: 'POST',
-      /* headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }, */
       body: JSON.stringify({
         subject: "Good Fellow Books Website visitor " + name + " needs help!",
         body: messageData,
@@ -117,6 +114,7 @@ export default function Contact() {
               label="Your Name"
               variant="outlined"
               value={name}
+              required
               onChange={(e) => setName(e.target.value)}
             />
             <TextField
@@ -124,6 +122,7 @@ export default function Contact() {
               label="Your Email"
               variant="outlined"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
             <TextField
@@ -131,6 +130,7 @@ export default function Contact() {
               label="Contact"
               variant="outlined"
               value={contact}
+              required
               onChange={(e) => setContact(e.target.value)}
             />
             <TextField
@@ -140,6 +140,7 @@ export default function Contact() {
               rows={4}
               variant="outlined"
               value={message}
+              required
               onChange={(e) => setMessage(e.target.value)}
             />
             <Button variant="contained" type="submit">
@@ -203,15 +204,27 @@ export default function Contact() {
               className="contact-item wrapper-social"
             >
               <HomeRoundedIcon className="icons" />
-              <div class="icon instagram">
-                <a
-                  href="https://www.instagram.com/good_fellowbooks/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <InstagramIcon className="social-icon"></InstagramIcon>
-                  <p>good_fellowbooks</p>
-                </a>
+              <div className="social-media-container">
+                <div className="icon instagram">
+                  <a
+                    href="https://www.instagram.com/good_fellowbooks/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <InstagramIcon className="social-icon"></InstagramIcon>
+                    <p>good_fellowbooks</p>
+                  </a>
+                </div>
+                <div className="icon x">
+                  <a
+                    href="https://x.com/fellow_books?t=5S1LA4NF_Fa2E2FS8faNaA&s=09"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <XIcon className="social-icon x-icon"></XIcon>
+                    <p>@fellow_books</p>
+                  </a>
+                </div>
               </div>
             </a>
           </div>
@@ -238,11 +251,12 @@ export default function Contact() {
 
         <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }} className="blocks">
           <div className="photos">
-            <a href="/" className="contact-item">
-              <PublicRoundedIcon className="icons" />
-              <h3>Website</h3>
-              <p href="/contact">http://www.fellowbooks.com</p>
-            </a>
+            <div className="contact-item">
+              <LocationIcon className="icons" />
+              <h3>Address</h3>
+              <p>142, Al Aqwam street, Al Rahba Al Sahama, Abu Dhabhi, UAE</p>
+              <p>112A, Kimberly Ave, Accra, Ghana. 05012</p>
+            </div>
           </div>
         </Grid>
       </Grid>

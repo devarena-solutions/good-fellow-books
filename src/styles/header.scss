@@ -78,7 +78,7 @@ $black: map_get($font-colors, "black");
     margin-left: 50px;
 
     img {
-      width: 100%;
+      width: 25%;
       height: auto;
     }
 
@@ -131,10 +131,12 @@ $black: map_get($font-colors, "black");
 
   @media only screen and (max-width: 770px) {
     .logo {
-      width: 50%;
       display: block;
-      margin: 0px;
-      margin-left: -5px;
+      margin-left: 10px;
+      
+      img {
+        width: 40%;
+      }
 
       a {
         padding: 20px 0px;

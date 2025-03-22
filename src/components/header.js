@@ -7,7 +7,7 @@ import List from '@mui/material/List';
 import ListItem from "@mui/material/ListItem";
 import Divider from '@mui/material/Divider';
 import Drawer from "@mui/material/Drawer";
-import logo from "../assets/logo.webp";
+import logo from "../assets/gfb-logo.png";
 
 import "../styles/header.scss";
 import ScrollToTop from "../ScrollToTop";
@@ -113,8 +113,7 @@ const Header = () => {
       <ScrollToTop />
       <div className={headerClassName}>
         <div className="logo" onClick={() => navigate("/")}>
-          {/* <img src={logo} alt="logo" /> */}
-          <p>Good fellow books logo</p>
+          <img src={logo} alt="logo" />
         </div>
         <Drawer
           open={drawerOpen}

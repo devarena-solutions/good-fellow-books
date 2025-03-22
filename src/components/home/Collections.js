@@ -8,6 +8,7 @@ import mathsImg from '../../assets/collections/maths.png';
 import entranceImg from '../../assets/collections/entrance.avif';
 import religiousImg from '../../assets/collections/religious.png';
 import sportsImg from '../../assets/collections/sports.png';
+import medicalImg from '../../assets/collections/medical.webp';
 
 import '../../styles/home/collections.scss';
 
@@ -29,6 +30,11 @@ export default function Collections() {
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
                     <img src={scicenceImg} />
                     <span className='collection-title'>Science</span>
+                </Grid>
+
+                <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>
+                    <img src={medicalImg} />
+                    <span className='collection-title'>Medical</span>
                 </Grid>
 
                 <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3, xl: 3 }} className='item-container'>

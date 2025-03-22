@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid2';
 import { NavLink, useNavigate } from 'react-router-dom';
 import ArrowIcon from '@mui/icons-material/ArrowRight';
 import HeartIcon from '@mui/icons-material/Favorite';
+import logo from '../assets/gfb-logo.png';
 
 import '../styles/footer.scss';
 
@@ -18,10 +19,6 @@ const Footer = () => {
       >
         <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }} className="no-gutters">
           <div className="contact-info">
-            <div className="navbar-brand" onClick={() => navigate('/')}>
-              {/* <img src={logo} className="logo" alt="RBlunt" /> */}
-              <p>Good Fellow Books logo</p>
-            </div>
             <p className="para">
               We are Good Fellow Books. We have been serving since 2021 and we're passionate about making education accessible to everyone, regardless of their circumstances. We're committed to providing educational books to everyone because knowledge knows no limits.
             </p>
